@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/GigActivityLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    tools:context=".AddGigActivity">
+
+    <TextView
+        android:id="@+id/TextViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/feedbacktitle"
+        android:textColor="@android:color/black"
+        android:textSize="10pt">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/EditTextArtist"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TextViewTitle"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/feedbackartist"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/EditTextGenre"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextArtist"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/feedbackgenre"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/EditTextDate"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextGenre"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/feedbackdate"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/EditTextVenue"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextDate"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/feedbackvenue"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/EditTextPrice"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextVenue"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/feedbackprice"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/EditTextAddress"
+        android:layout_width="256dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/EditTextPrice"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/feedbackaddress"
+        android:inputType="textMultiLine"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <EditText
+        android:id="@+id/EditTextShortDesc"
+        android:layout_width="256dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/EditTextAddress"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="@string/feedbackshortdesc"
+        android:inputType="textMultiLine"
+        android:textCursorDrawable="@null"
+        android:backgroundTint="@color/colorPrimary" />
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:onClick="onClickAddNewGig"
+        app:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/check_mark_48" />
+
+    <ImageView
+        android:id="@+id/imageViewNewGig"
+        android:layout_width="120dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/EditTextShortDesc"
+        android:padding="4dp"
+        android:layout_marginLeft="16dp"
+        app:srcCompat="@drawable/logo" />
+
+    <Button
+        android:id="@+id/bAddGig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/EditTextShortDesc"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/imageViewNewGig"
+        android:text="Pick Image" />
+
+</RelativeLayout>

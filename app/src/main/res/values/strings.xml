@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GigHub</string>
+    <string name="feedbacktitle">Add new gig:</string>
+    <string name="feedbackartist">Artist</string>
+    <string name="feedbackgenre">Genre</string>
+    <string name="feedbackdate">Date</string>
+    <string name="feedbackvenue">City</string>
+    <string name="feedbackprice">Price</string>
+    <string name="feedbackaddress">Address</string>
+    <string name="feedbackshortdesc">Short Description</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="settings_show_location_based">Use location</string>
+    <string name="settings_name">Settings</string>
+    <string name="refresh_name">Refresh</string>
+
+</resources>
